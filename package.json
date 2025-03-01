@@ -1,0 +1,56 @@
+{
+  "name": "@localazy/tsconfig",
+  "version": "1.0.0-beta.0",
+  "description": "Localazy TypeScript configuration",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "localazy"
+  ],
+  "homepage": "https://github.com/localazy/tsconfig#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localazy/tsconfig.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Localazy",
+    "email": "team@localazy.com",
+    "url": "https://localazy.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./tsconfig.json",
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./tsconfig.library.json": "./tsconfig.library.json",
+    "./tsconfig.monorepo-library.json": "./tsconfig.monorepo-library.json",
+    "./tsconfig.service.json": "./tsconfig.service.json"
+  },
+  "main": "tsconfig.json",
+  "module": "tsconfig.json",
+  "files": [
+    "tsconfig.json",
+    "tsconfig.base.json",
+    "tsconfig.library.json",
+    "tsconfig.monorepo-library.json",
+    "tsconfig.service.json"
+  ],
+  "scripts": {
+    "check": "pnpm run prettier",
+    "check:fix": "pnpm run prettier:fix",
+    "prepare": "husky",
+    "prettier": "prettier --check --cache .",
+    "prettier:fix": "prettier --write ."
+  },
+  "prettier": "@localazy/prettier-config",
+  "devDependencies": {
+    "@localazy/prettier-config": "1.0.0-beta.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@10.3.0"
+}
