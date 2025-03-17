@@ -3,17 +3,7 @@
   "extends": "./tsconfig.library.json",
   "compilerOptions": {
     "composite": true,
-    "declaration": true,
     "declarationMap": true,
-    "tsBuildInfoFile": "${configDir}/dist/tsconfig.tsbuildinfo",
-    "outDir": "${configDir}/dist",
-    "rootDir": "${configDir}/src",
-    "rootDirs": ["${configDir}/src", "${configDir}"],
-    "baseUrl": "${configDir}",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "include": ["${configDir}/src"],
-  "exclude": ["node_modules", "${configDir}/dist", "${configDir}/coverage", "${configDir}/typedoc"]
+    "tsBuildInfoFile": "${configDir}/dist/tsconfig.tsbuildinfo"
+  }
 }
