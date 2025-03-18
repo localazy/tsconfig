@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@localazy/prettier-config':
-        specifier: 1.0.0-beta.0
-        version: 1.0.0-beta.0(prettier@3.5.3)(typescript@5.8.2)
+        specifier: 1.0.0-beta.1
+        version: 1.0.0-beta.1(prettier@3.5.3)(typescript@5.8.2)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -23,8 +23,8 @@ importers:
 
 packages:
 
-  '@localazy/prettier-config@1.0.0-beta.0':
-    resolution: {integrity: sha512-QHT38YgszoSkIYy5QQSkS56/rNvHeF6Pn9hiBwkSgvTIpKknc6fTBl2RzBUN8/qd/Jobtz2PdzSTc3Vo/f9YfQ==}
+  '@localazy/prettier-config@1.0.0-beta.1':
+    resolution: {integrity: sha512-NerZCxl8i62lY+NrqtuSocG6rJnZN/BflcA7ZXvQxQJN4LRZ2px3AUTrs+1pcJw+RSCGmPsoJ1MfzLx1VvuT4w==}
     peerDependencies:
       prettier: ^3.5.2
 
@@ -134,7 +134,7 @@ packages:
 
 snapshots:
 
-  '@localazy/prettier-config@1.0.0-beta.0(prettier@3.5.3)(typescript@5.8.2)':
+  '@localazy/prettier-config@1.0.0-beta.1(prettier@3.5.3)(typescript@5.8.2)':
     dependencies:
       prettier: 3.5.3
       prettier-plugin-organize-imports: 4.1.0(prettier@3.5.3)(typescript@5.8.2)
