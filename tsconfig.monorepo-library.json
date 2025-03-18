@@ -4,6 +4,7 @@
   "compilerOptions": {
     "composite": true,
     "declarationMap": true,
-    "tsBuildInfoFile": "${configDir}/dist/tsconfig.tsbuildinfo"
+    "tsBuildInfoFile": "${configDir}/dist/tsconfig.tsbuildinfo",
+    "rootDir": "${configDir}/src"
   }
 }

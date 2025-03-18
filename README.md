@@ -4,7 +4,7 @@
 
 ### 📦 `@localazy/tsconfig`
 
-_A standardized TypeScript configuration for Localazy projects._
+_A standardized TypeScript configuration for Localazy projects_
 
 </div>
 
@@ -14,13 +14,13 @@ Install the package using your preferred package manager:
 
 ```shell
 # Using npm
-npm install @localazy/tsconfig --save-dev
+npm install typescript @localazy/tsconfig --save-dev
 
 # Using yarn
-yarn add @localazy/tsconfig --dev
+yarn add typescript @localazy/tsconfig --dev
 
 # Using pnpm
-pnpm add @localazy/tsconfig --save-dev
+pnpm add typescript @localazy/tsconfig --save-dev
 ```
 
 ## 🔧 Usage
@@ -29,7 +29,22 @@ In your tsconfig.json, extend the configuration:
 
 ```json
 {
-  "extends": "@localazy/tsconfig"
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@localazy/tsconfig/tsconfig.library.json"
+}
+```
+
+```json
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@localazy/tsconfig/tsconfig.monorepo-library.json"
+}
+```
+
+```json
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@localazy/tsconfig/tsconfig.service.json"
 }
 ```
 
