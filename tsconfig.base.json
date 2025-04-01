@@ -46,6 +46,7 @@
   },
   "include": [
     "${configDir}/src",
+    "${configDir}/*.d.ts",
     "${configDir}/*.config.ts",
     "${configDir}/*.config.tsx",
     "${configDir}/*.config.cts",
