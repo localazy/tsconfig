@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "ES Library TypeScript Configuration",
+  "display": "Node.js Library TypeScript Configuration",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     /**
@@ -10,11 +10,11 @@
     // Output JavaScript will use modern ES2022 features
     "target": "ES2022",
 
-    // Use the latest module system (ideal for bundlers like Vite)
-    "module": "ESNext",
+    //
+    "module": "NodeNext",
 
-    // Module resolution optimized for bundlers (like Vite, esbuild)
-    "moduleResolution": "bundler",
+    //
+    "moduleResolution": "nodenext",
 
     //
     "moduleDetection": "force",

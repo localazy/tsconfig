@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Monorepo ES Library TypeScript Configuration",
-  "extends": "./tsconfig.library.json",
+  "display": "Monorepo Node.js Library TypeScript Configuration",
+  "extends": "./tsconfig.node.library.json",
   "compilerOptions": {
     /**
      * Incremental Compilation
