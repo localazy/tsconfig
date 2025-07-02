@@ -20,20 +20,21 @@
   },
   "type": "module",
   "exports": {
-    ".": "./tsconfig.json",
+    ".": "./tsconfig.library.json",
     "./tsconfig.base.json": "./tsconfig.base.json",
     "./tsconfig.library.json": "./tsconfig.library.json",
     "./tsconfig.monorepo-library.json": "./tsconfig.monorepo-library.json",
-    "./tsconfig.service.json": "./tsconfig.service.json"
+    "./tsconfig.node.library.json": "./tsconfig.node.library.json",
+    "./tsconfig.node.monorepo-library.json": "./tsconfig.node.monorepo-library.json"
   },
-  "main": "tsconfig.json",
-  "module": "tsconfig.json",
+  "main": "tsconfig.library.json",
+  "module": "tsconfig.library.json",
   "files": [
-    "tsconfig.json",
     "tsconfig.base.json",
     "tsconfig.library.json",
     "tsconfig.monorepo-library.json",
-    "tsconfig.service.json"
+    "tsconfig.node.library.json",
+    "tsconfig.node.monorepo-library.json"
   ],
   "scripts": {
     "check": "pnpm run prettier",
@@ -46,8 +47,8 @@
   "devDependencies": {
     "@localazy/prettier-config": "1.0.0-beta.1",
     "husky": "^9.1.7",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.2"
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "typescript": ">=5.0.0"
