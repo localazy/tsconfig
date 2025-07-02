@@ -44,7 +44,14 @@ In your tsconfig.json, extend the configuration:
 ```json
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@localazy/tsconfig/tsconfig.service.json"
+  "extends": "@localazy/tsconfig/tsconfig.node.library.json"
+}
+```
+
+```json
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@localazy/tsconfig/tsconfig.node.monorepo-library.json"
 }
 ```
 
